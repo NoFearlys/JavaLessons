@@ -16,9 +16,9 @@ class DataAccess1 implements Dao{
 
 class Client{
     Dao dataAccess = new DataAccess1();
-    void doJob(){
+    public void doJob(){
         dataAccess.execute();
     }
 
-    //В данном примере Client "не знает" ничего о DataAccess1 и обращается только к интерфейсу
+    //В данном примере Client "не знает" ничего о DataAccess1 и обращается только к интерфейсу.
 }

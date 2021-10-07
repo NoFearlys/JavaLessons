@@ -12,9 +12,9 @@ class DataAccess{
 
 class Client{
     DataAccess dataAccess = new DataAccess();
-    void doJob(){
+    public void doJob(){
         dataAccess.execute();
     }
 
-    //В данном примере Client "знает" всё о DataAccess, а это не соответствует принципу DIP
+    //В данном примере Client "знает" всё о DataAccess, а это не соответствует принципу DIP.
 }
